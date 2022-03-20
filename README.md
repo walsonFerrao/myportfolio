@@ -13,7 +13,7 @@ My personal portfolio website built with React, styled components, and Framer Mo
 
 Open up your command line and clone this repo:
 
-
+```bash
 # Clone this repository
 $ git clone <repo link>
 
@@ -26,9 +26,10 @@ $ git remote remove origin
 # If you want, you can add a new remote repository
 $ git remote add origin https://github.com/<your-github-username>/<your-repo-name>.git
 ```
-```
 
 Then you can install the project dependencies using npm:
+
+```bash
 # Install dependencies
 $ npm install
 
