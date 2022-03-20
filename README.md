@@ -13,9 +13,9 @@ My personal portfolio website built with React, styled components, and Framer Mo
 
 Open up your command line and clone this repo:
 
-```bash
+
 # Clone this repository
-$ git clone https://github.com/Ayon95/portfolio-website
+$ git clone <repo link>
 
 # Go into the repository
 $ cd portfolio-website
@@ -29,8 +29,6 @@ $ git remote add origin https://github.com/<your-github-username>/<your-repo-nam
 ```
 
 Then you can install the project dependencies using npm:
-
-```bash
 # Install dependencies
 $ npm install
 
