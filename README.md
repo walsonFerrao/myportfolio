@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My personal portfolio website built with Gatsby, styled components, and Framer Motion.
+My personal portfolio website built with React, styled components, and Framer Motion.
 
 
 ## Tools and technologies used
