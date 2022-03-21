@@ -24,8 +24,8 @@ export const projects = [
 			alt: 'laptop and mobile mockup of Memories app',
 		},
 
-		websiteLink: 'https://memories-app-mushfiq.netlify.app',
-		githubLink: 'https://github.com/Ayon95/fullstack-memories-app',
+		websiteLink: 'https://www.levi.in/',
+		githubLink: 'https://github.com/vijendrasaini/levi.inClone',
 	},
 
 	{
@@ -42,8 +42,8 @@ export const projects = [
 			alt: 'laptop and mobile mockup of EasyAppoint app',
 		},
 
-		websiteLink: 'https://easy-appoint.netlify.app',
-		githubLink: 'https://github.com/Ayon95/easy-appoint',
+		websiteLink: 'https://affectionate-swirles-dc9e0e.netlify.app/',
+		githubLink: 'https://github.com/Uditkishore/CW-Project.git',
 	}
 
 	
