@@ -5,7 +5,7 @@ import Button from '../generic/Button';
 import FadeInFromBelow from '../animation/FadeInFromBelow';
 import { motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
-import mypic from '../../assets/images/mypic.png'
+import mypic from '../../assets/images/mypic.png';
 
 const subtitleVariants = {
 	hidden: { x: -60, opacity: 0 },
@@ -19,7 +19,7 @@ const subtitleVariants = {
 
 const Hero = React.forwardRef((_, ref) => {
 	// making a query to get the resume
-	
+
 	return (
 		<Container ref={ref}>
 			<HeroContent>
@@ -33,7 +33,8 @@ const Hero = React.forwardRef((_, ref) => {
 					/>
 				</h1>
 				<motion.p variants={subtitleVariants} initial="hidden" animate="visible">
-				A passionate and creative full-stack web developer who likes creating amazing interactive experiences on the web.{' '}
+					A passionate and creative full-stack web developer who likes creating amazing interactive
+					experiences on the web.{' '}
 				</motion.p>
 				<ButtonsContainer>
 					<FadeInFromBelow>
@@ -41,12 +42,19 @@ const Hero = React.forwardRef((_, ref) => {
 					</FadeInFromBelow>
 
 					<FadeInFromBelow>
-						<Button text="View Resume" isExternalLink={true} url={'https://drive.google.com/file/d/1mVSd0CWFZSxI-TeY50mXHOx1t65f4yMN/view?usp=sharing'} />
+						<Button
+							text="View Resume"
+							isExternalLink={true}
+							url={
+								'https://drive.google.com/file/d/1mVSd0CWFZSxI-TeY50mXHOx1t65f4yMN/view?usp=sharing'
+							}
+						/>
 					</FadeInFromBelow>
 				</ButtonsContainer>
 			</HeroContent>
-			{/* <ProfilePicture>
-			</ProfilePicture> */}
+			<ProfilePicture>
+				<img src={mypic} alt="profile-pic" />
+			</ProfilePicture>
 		</Container>
 	);
 });
@@ -57,6 +65,13 @@ const Container = styled.section`
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	gap: 40px;
+
+	@media (max-width: 768px) {
+		padding-bottom: 30px;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
 `;
 
 const ButtonsContainer = styled.div`
@@ -68,6 +83,11 @@ const ButtonsContainer = styled.div`
 
 const HeroContent = styled.div`
 	margin-top: 2rem;
+	width: 60%;
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 
 	h1 {
 		margin-bottom: 2rem;
@@ -80,8 +100,15 @@ const HeroContent = styled.div`
 	}
 `;
 
-const ProfilePicture=styled.div`
-border:1px solid white;
+const ProfilePicture = styled.div`
+	width: 40%;
 
+	@media (max-width: 768px) {
+		width: 60%;
+	}
 
-`
+	> img {
+		width: 100%;
+		border-radius: 300px;
+	}
+`;
