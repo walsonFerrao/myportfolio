@@ -86,7 +86,14 @@ const HeroContent = styled.div`
 	width: 60%;
 
 	@media (max-width: 768px) {
-		width: 100%;
+		width: 70%;
+		> h1{
+			font-size: 3rem;
+		}
+		> p {
+			margin: auto;
+		}
+		
 	}
 
 	h1 {
