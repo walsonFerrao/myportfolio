@@ -108,7 +108,7 @@ const HeroContent = styled.div`
 `;
 
 const ProfilePicture = styled.div`
-	width: 40%;
+	width: 30%;
 
 	@media (max-width: 768px) {
 		width: 60%;
