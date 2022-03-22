@@ -54,7 +54,7 @@ function Project({ project }) {
 				<h3>{project.title}</h3>
 				<p>{project.description}</p>
 				<br />
-				<ul>
+				<ul className='project-functionalities'>
 					<li>{project.one}</li>
 					<li>{project.two}</li>
 					<li>{project.three}</li>
@@ -140,6 +140,14 @@ const TextContent = styled.div`
 	h3 {
 		text-align: center;
 		margin-bottom: ${stylesConfig.projectLayoutSpacing};
+	}
+	.project-functionalities {
+		margin-left:20px;
+    li{
+		color:#c0bfc7;
+		font-size:1.5rem
+	}
+
 	}
 
 	p {

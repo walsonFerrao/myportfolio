@@ -44,11 +44,12 @@ function Contact() {
 		try {
 			// sending email; the response object will look like {status: 200, text: "OK"}
 			const response = await emailjs.send(
-				process.env.GATSBY_EMAILJS_SERVICE_ID,
-				process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+				"service_ety652x",
+                 "template_11tr9xm",
 				values,
-				process.env.GATSBY_EMAILJS_USER_ID
+				"KjiVrcwemwxkXWiBx"
 			);
+			console.log(response)
 			// if the request was not successful then throw an error
 			if (response.text !== 'OK') {
 				throw new Error('Failed to send message. Please try again later.');

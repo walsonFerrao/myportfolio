@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
 import SectionWrapper from '../generic/SectionWrapper';
 
+
 function About() {
 	const [aboutSectionRef, aboutSectionInView] = useInView({
 		threshold: 0.6,
@@ -15,11 +16,17 @@ function About() {
 			ref={aboutSectionRef}
 			sectionInView={aboutSectionInView}
 		>
+          
+		 
+		 
+
+		  
+		  
+			
 			<p>
-				Hi, I'm Mushfiq Rahman, a web developer based in Waterloo, Canada. I enjoy building web
+				Hi, I'm Walson Ferrao, a web developer based in Mangalore, India. I enjoy building web
 				applications with clean and beautiful interfaces that provide a delightful user experience.
-				I love learning new technologies and concepts related to web development. I find delight in
-				solving problems with clean, simple, and easy-to-understand code.
+				I love learning new technologies and concepts related to web development. I like implimenting creative things in website.
 			</p>
 
 			<p>
@@ -33,6 +40,8 @@ function About() {
 export default About;
 
 const SectionContainer = styled(SectionWrapper)`
+       
+
 	p {
 		width: 100%;
 		max-width: 55ch;

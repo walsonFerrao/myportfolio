@@ -5,6 +5,7 @@ import Button from '../generic/Button';
 import FadeInFromBelow from '../animation/FadeInFromBelow';
 import { motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
+import mypic from '../../assets/images/mypic.png'
 
 const subtitleVariants = {
 	hidden: { x: -60, opacity: 0 },
@@ -18,13 +19,7 @@ const subtitleVariants = {
 
 const Hero = React.forwardRef((_, ref) => {
 	// making a query to get the resume
-	const data = useStaticQuery(graphql`
-		query ResumeQuery {
-			file(relativePath: { eq: "mushfiq_rahman_resume.pdf" }) {
-				publicURL
-			}
-		}
-	`);
+	
 	return (
 		<Container ref={ref}>
 			<HeroContent>
@@ -46,10 +41,12 @@ const Hero = React.forwardRef((_, ref) => {
 					</FadeInFromBelow>
 
 					<FadeInFromBelow>
-						<Button text="View Resume" isExternalLink={true} url={data.file.publicURL} />
+						<Button text="View Resume" isExternalLink={true} url={'https://drive.google.com/file/d/1mVSd0CWFZSxI-TeY50mXHOx1t65f4yMN/view?usp=sharing'} />
 					</FadeInFromBelow>
 				</ButtonsContainer>
 			</HeroContent>
+			{/* <ProfilePicture>
+			</ProfilePicture> */}
 		</Container>
 	);
 });
@@ -82,3 +79,9 @@ const HeroContent = styled.div`
 		margin-bottom: 4rem;
 	}
 `;
+
+const ProfilePicture=styled.div`
+border:1px solid white;
+
+
+`

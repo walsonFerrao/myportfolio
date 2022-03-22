@@ -26,18 +26,18 @@ export default function Home() {
 			<Helmet>
 				<meta
 					name="description"
-					content="Portfolio website of Mushfiq Rahman, a front-end developer"
+					content="Portfolio website of Walson Ferrao, a front-end developer"
 				/>
 				<title>Walson Ferrao | Full Stack Developer</title>
 				<link rel="icon" href={favicon} />
 			</Helmet>
 			<Layout heroSectionInView={heroSectionInView}>
 				<Hero ref={heroSectionRef} />
-
-				<h1>Helloooo</h1>
+				<About />
+	
 				<Projects />
 				<Skills />
-				<About />
+				
 				<Contact />
 			</Layout>
 		</div>

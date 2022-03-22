@@ -4,11 +4,11 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import ContactLink from './ContactLink';
 
 const contactLinks = [
-	{ title: 'Send email', url: 'mailto:mushfiqurrahman78@yahoo.com', icon: FaEnvelope },
-	{ title: 'View my GitHub', url: 'https://github.com/Ayon95', icon: FaGithub },
+	{ title: 'Send email', url: 'mailto:walsongodwin@gmail.com', icon: FaEnvelope },
+	{ title: 'View my GitHub', url: 'https://github.com/walsonFerrao', icon: FaGithub },
 	{
 		title: 'View my LinkedIn',
-		url: 'https://www.linkedin.com/in/mushfiq-rahman-653688203/',
+		url: 'https://www.linkedin.com/in/walson-ferrao-77ba76230/',
 		icon: FaLinkedin,
 	},
 ];

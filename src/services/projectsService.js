@@ -1,3 +1,10 @@
+import dineout1 from '../assets/images/dineout1.png';
+import dineout2 from '../assets/images/dineout2.png';
+import levi1 from '../assets/images/levi1.png';
+import levi2 from '../assets/images/levis.png';
+
+
+
 export const projects = [
 	{
 		title: 'Levi’s Clone',
@@ -19,13 +26,10 @@ export const projects = [
 			'CSS',
 		],
 
-		image: {
-			name: 'memories-mockup',
-			alt: 'laptop and mobile mockup of Memories app',
-		},
+		image:[{link:levi1,index:1},{link:levi2,index:2}],
 
-		websiteLink: 'https://www.levi.in/',
-		githubLink: 'https://github.com/vijendrasaini/levi.inClone',
+		websiteLink: 'https://leviwithbackend.herokuapp.com/',
+		githubLink: 'https://github.com/vijendrasaini/LeviWithBackend',
 	},
 
 	{
@@ -37,13 +41,14 @@ export const projects = [
 			three:"Payment page integration",
 			four:"Responsive website",
 		technologiesUsed: ['JavaScript', 'HTML', 'CSS'],
-		image: {
-			name: 'easy-appoint-mockup',
-			alt: 'laptop and mobile mockup of EasyAppoint app',
-		},
+		
+
+		image:[{link:dineout1,index:1},{link:dineout2,index:2}],
+
+
 
 		websiteLink: 'https://affectionate-swirles-dc9e0e.netlify.app/',
-		githubLink: 'https://github.com/Uditkishore/CW-Project.git',
+		githubLink: 'https://github.com/Uditkishore/CW-Project',
 	}
 
 	
