@@ -72,6 +72,10 @@ const Container = styled.section`
 		justify-content: center;
 		flex-direction: column-reverse;
 	}
+	@media (max-width: 760px) {
+		margin-bottom:100px;
+	
+	}
 `;
 
 const ButtonsContainer = styled.div`
@@ -89,12 +93,23 @@ const HeroContent = styled.div`
 		width: 70%;
 		> h1{
 			font-size: 3rem;
+			
 		}
 		> p {
 			margin: auto;
 		}
 		
 	}
+	@media (max-width: 760px) {
+		> h1{
+			font-size:3rem;
+		}
+		
+	
+	}
+
+
+
 
 	h1 {
 		margin-bottom: 2rem;
@@ -112,6 +127,10 @@ const ProfilePicture = styled.div`
 
 	@media (max-width: 768px) {
 		width: 60%;
+	}
+	@media (max-width: 760px) {
+		margin-top:40%;
+		width: 50%;
 	}
 
 	> img {
