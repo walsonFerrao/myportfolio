@@ -1,16 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs, FaGitAlt, FaNpm } from 'react-icons/fa';
-import {
-	SiJavascript,
-	
-	SiMaterialUi,
-	SiStyledComponents,
-	
-	SiMongodb,
-	
-	SiRedux,
-} from 'react-icons/si';
+import { SiJavascript, SiMaterialUi, SiStyledComponents, SiMongodb, SiRedux } from 'react-icons/si';
 import { MdDevices } from 'react-icons/md';
 import Skill from './Skill';
 import SectionWrapper from '../../generic/SectionWrapper';
@@ -36,6 +27,7 @@ function Skills() {
 		root: null,
 		rootMargin: '-80px',
 	});
+
 	return (
 		<SectionWrapper
 			title="Skills"
@@ -44,8 +36,8 @@ function Skills() {
 			sectionInView={skillsSectionInView}
 		>
 			<SkillsList>
-				{skills.map(({ text, icon, color }) => (
-					<Skill key={text} text={text} icon={icon} color={color} />
+				{skills.map(({ text, icon }) => (
+					<Skill key={text} text={text} icon={icon} />
 				))}
 			</SkillsList>
 		</SectionWrapper>
