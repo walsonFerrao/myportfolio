@@ -6,7 +6,6 @@ function Footer() {
 	return (
 		<FooterComponent>
 			<p>&copy; 2022. Designed and developed by Walson Ferrao.</p>
-			<p>walsongodwin@gmail.com</p>
 		</FooterComponent>
 	);
 }

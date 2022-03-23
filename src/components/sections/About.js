@@ -26,7 +26,7 @@ function About() {
 			<p>
 				Hi, I'm Walson Ferrao, a web developer based in Mangalore, India. I enjoy building web
 				applications with clean and beautiful interfaces that provide a delightful user experience.
-				I love learning new technologies and concepts related to web development. I like implimenting creative things in website.
+				I love learning new technologies and concepts related to web development. I like implementing creative things in website.
 			</p>
 
 			<p>

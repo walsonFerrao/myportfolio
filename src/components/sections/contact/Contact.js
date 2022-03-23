@@ -98,6 +98,12 @@ function Contact() {
 			<AnimatePresence>
 				{snackbar.shouldShow && <Snackbar snackbar={snackbar} setSnackbar={setSnackbar} />}
 			</AnimatePresence>
+			<Phonenumber>
+				<br/>
+				<p>Phone: 9844332122</p>
+				<p>Email: walsongodwin@gmail.com</p>
+				<br/>
+			</Phonenumber>
 		</SectionWrapper>
 	);
 }
@@ -111,3 +117,16 @@ const FormComponent = styled(Form)`
 	max-width: 64rem;
 	margin: 0 auto 6rem auto;
 `;
+
+
+const Phonenumber=styled.div`
+height: 20px;
+text-align:center;
+
+
+
+
+
+
+
+`

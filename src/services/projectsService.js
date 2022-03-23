@@ -35,11 +35,11 @@ export const projects = [
 	{
 		title: 'Dineout Clone',
 		description:
-			'An appointment-management app that allows users to add, edit, or delete their appointments. Doctors can store and manage patient information such as name, age, phone number, and appointment date.',
+			'Dineout is a restaurant tech solutions platform that helps customers find the nearest dine-out option.',
 			one:"Sign-in/Sign-up",
-			two:"Sort and filter",
+			two:"Sorting Feature",
 			three:"Payment page integration",
-			four:"Responsive website",
+			four:"Filtering feature",
 		technologiesUsed: ['JavaScript', 'HTML', 'CSS'],
 		
 
